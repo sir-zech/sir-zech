@@ -60,7 +60,7 @@ I’m a **passionate software developer** and a **cybersecurity enthusiast**, ex
 
 🏥 **MediCareBook (AKA Book a Doctor using MERN)**  
 🔹 **Tech Stack:** MERN Stack, TypeScript, JWT, Redux, Tailwind CSS  
-🔹 **Features:** Secure authentication, user roles, admin dashboard, and intuitive booking system.  
+🔹 **Features:** Secure authentication, user roles, admin dashboard, and intuitive Doctor appoinments booking system.  
 
 🌐 **E-commerce Website & AI Chatbot**  
 🔹 **Tech Stack:** WordPress, IBM Watson AI  
