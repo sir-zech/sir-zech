@@ -116,7 +116,7 @@ I’m a **passionate software developer** and a **cybersecurity enthusiast**, ex
 <p align="left">
   <a href="https://github.com/sir-zech"><img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github" /></a>
   <a href="https://www.linkedin.com/in/sirzech/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" /></a>
-  <a href="https://sirzech.netlify.app/#projects"><img src="https://img.shields.io/badge/Portfolio-FF5733?style=for-the-badge&logo=react&logoColor=white" /></a>
+  <a href="https://sirzech.netlify.app/#PORTFOLIO"><img src="https://img.shields.io/badge/Portfolio-FF5733?style=for-the-badge&logo=react&logoColor=white" /></a>
 </p>  
 
 💡 **"Code, Secure, and Innovate!"** 🚀
