@@ -58,9 +58,9 @@ I’m a **passionate software developer** and a **cybersecurity enthusiast**, ex
 
 ## **📌 Notable Projects**  
 
-🚀 **Doctor Appointment Booking System**  
+🏥 **MediCareBook (AKA Book a Doctor using MERN)**  
 🔹 **Tech Stack:** MERN Stack, TypeScript, JWT, Redux, Tailwind CSS  
-🔹 **Features:** Secure authentication, user roles, admin dashboard  
+🔹 **Features:** Secure authentication, user roles, admin dashboard, and intuitive booking system.  
 
 🌐 **E-commerce Website & AI Chatbot**  
 🔹 **Tech Stack:** WordPress, IBM Watson AI  
@@ -73,6 +73,22 @@ I’m a **passionate software developer** and a **cybersecurity enthusiast**, ex
 🔍 **Penetration Testing Project**  
 🔹 **Tools Used:** SQL Injection, Burp Suite, Acunetix  
 🔹 **Tested security vulnerabilities & implemented patches**  
+
+✅ **To-Do List Web App**  
+🔹 **Tech Stack:** Flutter Web | State Management  
+🔹 **Description:** A task management application built with Flutter Web, enabling users to create, edit, and organize tasks efficiently.  
+
+🌦 **Pixel Weather**  
+🔹 **Tech Stack:** React | Node.js | MongoDB | OpenWeatherMap API  
+🔹 **Description:** A retro-style weather app fetching real-time data to display temperature, weather status, and location.  
+
+🎬 **Netflix Clone**  
+🔹 **Tech Stack:** React | Node.js | MongoDB  
+🔹 **Description:** A replica of Netflix's landing page featuring a hero section, show thumbnails, and a subscription form.  
+
+✈️ **Magical Travel**  
+🔹 **Tech Stack:** React | Node.js | MongoDB  
+🔹 **Description:** A flight booking platform where users can search flights, view popular destinations, and manage bookings seamlessly.  
 
 ---
 
