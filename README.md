@@ -37,15 +37,15 @@ $ cat about_me.txt
 ```
 
 ```
- ┌─────────────────────────────────────────────────────────────┐
- │  👨‍💻  Software Developer (Full Stack)                        │
- │  🎓  B.E. Computer Science & Engineering — Class of 2025    │
- │  📍  Chennai, India                                         │
- │  ☁️  Growing towards the Cloud, one commit at a time        │
- │  🔧  I turn coffee & keystrokes into working software       │
- │  🕹️  I also build silly little browser games for fun        │
- │  🌱  Currently deep-diving: C# · ASP.NET · Azure            │
- └─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────┐
+│ > Software Developer (Full Stack)                           │
+│ * B.E. Computer Science & Engineering — Class of 2025       │
+│ @ Chennai, India                                            │
+│ ~ Growing towards the Cloud, one commit at a time           │
+│ # I turn coffee & keystrokes into working software          │
+│ + I also build silly little browser games for fun           │
+│ - Currently deep-diving: C# · ASP.NET · Azure               │
+└─────────────────────────────────────────────────────────────┘
 ```
 
 > *"First, solve the problem. Then, write the code."* — John Johnson
@@ -123,7 +123,7 @@ $ cat stack.json | jq
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║           > GAMES --hobby.exe  [because why not]            ║
+║           > GAMES --hobby.exe  [because why not]             ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
