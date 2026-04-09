@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 56" width="760" height="56">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .mid{fill:#b8992e}.bright{fill:#ffe066}.dim{fill:#4a3c0e}
+      @keyframes march{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
+      .march{stroke-dasharray:8 4;animation:march .7s linear infinite}
+    </style>
+  </defs>
+  <rect width="760" height="56" fill="#0d0d16"/>
+  <line x1="0" y1="0" x2="0" y2="56" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="56" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="0" y1="0" x2="760" y2="0" stroke="#f5c842" stroke-width=".4" opacity=".2"/>
+  <!-- marching line through middle -->
+  <line x1="32" y1="28" x2="728" y2="28" stroke="#f5c842" stroke-width=".8" class="march" opacity=".4"/>
+  <!-- label box over it -->
+  <rect x="290" y="14" width="180" height="28" rx="4" fill="#0d0d16" stroke="#f5c842" stroke-width="1"/>
+  <text x="380" y="32" text-anchor="middle" class="m bright" style="font-size:12px">$ github --stats</text>
+</svg>
