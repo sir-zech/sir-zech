@@ -13,10 +13,25 @@
 
 ![Typing SVG](https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=15&pause=1000&color=F5A623&center=true&vCenter=true&width=520&lines=Hello%2C+World!+I'm+Naveen+B;Full+Stack+Dev+%7C+Java+%2B+Spring+Boot;Learning+the+Cloud+one+commit+at+a+time;Angular+%2B+React+%7C+REST+APIs+%7C+.NET;Also+makes+browser+games+for+fun)
 
-<img src="./assets/01-about.svg" width="760" style="display:block;margin:0;padding:0;pointer-events:none" alt="About"/>
-<img src="./assets/02-stack.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Stack"/>
-<img src="./assets/03-games.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Games"/>
-<img src="./assets/05-stats-bar.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Stats"/>
+<img src="./assets/01-about.svg"
+     width="760"
+     style="display:block;margin:0 0 6px 0;padding:0;pointer-events:none"
+     alt="About"/>
+
+<img src="./assets/02-stack.svg"
+     width="760"
+     style="display:block;margin:0 0 6px 0;padding:0;pointer-events:none"
+     alt="Stack"/>
+
+<img src="./assets/03-games.svg"
+     width="760"
+     style="display:block;margin:0 0 6px 0;padding:0;pointer-events:none"
+     alt="Games"/>
+
+<img src="./assets/05-stats-bar.svg"
+     width="760"
+     style="display:block;margin:0;padding:0;pointer-events:none"
+     alt="Stats"/>
 
 <br/>
 
