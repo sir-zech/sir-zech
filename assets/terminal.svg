@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+
+      .screen { fill: #0a0a0f; }
+      .bezel  { fill: none; stroke: #f5c842; stroke-width: 2; rx: 8; }
+
+      text {
+        font-family: 'Share Tech Mono', 'Courier New', monospace;
+        fill: #f5c842;
+        font-size: 15px;
+      }
+
+      .dim  { fill: #7a6020; }
+      .bright { fill: #ffe066; }
+
+      /* scanlines */
+      .scan { fill: rgba(0,0,0,0); }
+
+      /* typing lines — each fades in at its own delay */
+      .l1 { animation: fadein 0.1s 0.3s both; }
+      .l2 { animation: fadein 0.1s 1.4s both; }
+      .l3 { animation: fadein 0.1s 2.5s both; }
+      .l4 { animation: fadein 0.1s 3.6s both; }
+      .l5 { animation: fadein 0.1s 4.7s both; }
+      .l6 { animation: fadein 0.1s 5.8s both; }
+      .l7 { animation: fadein 0.1s 6.9s both; }
+      .l8 { animation: fadein 0.1s 8.0s both; }
+
+      @keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+      }
+
+      /* blinking cursor */
+      .cursor {
+        animation: fadein 0.1s 8.2s both, blink 1s 8.2s step-end infinite;
+      }
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50%       { opacity: 0; }
+      }
+
+      /* flicker on the whole screen */
+      .flicker {
+        animation: flicker 8s linear infinite;
+      }
+      @keyframes flicker {
+        0%,100% { opacity: 1; }
+        92%     { opacity: 1; }
+        93%     { opacity: 0.85; }
+        94%     { opacity: 1; }
+        96%     { opacity: 0.9; }
+        97%     { opacity: 1; }
+      }
+
+      /* border glow pulse */
+      .glow {
+        animation: glow 3s ease-in-out infinite alternate;
+      }
+      @keyframes glow {
+        from { stroke: #b8992e; }
+        to   { stroke: #ffe066; }
+      }
+    </style>
+
+    <!-- scanline pattern -->
+    <pattern id="scanlines" x="0" y="0" width="800" height="4" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="800" height="2" fill="rgba(0,0,0,0.08)" />
+    </pattern>
+  </defs>
+
+  <!-- outer bezel -->
+  <rect x="2" y="2" width="796" height="396" rx="10" ry="10"
+        fill="#111118" stroke="#f5c842" stroke-width="2" class="glow" />
+
+  <!-- screen background -->
+  <rect x="14" y="14" width="772" height="372" rx="6" ry="6" class="screen flicker" />
+
+  <!-- text content -->
+  <g class="flicker">
+
+    <!-- prompt symbol + lines -->
+    <text x="32" y="58"  class="l1 dim">┌──────────────────────────────────────────────────────────┐</text>
+    <text x="32" y="82"  class="l2">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>NAVEEN B</tspan>
+      <tspan class="dim">  //  Full Stack Developer</tspan>
+    </text>
+    <text x="32" y="106" class="l3">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>Java · Spring Boot · C# · ASP.NET</tspan>
+    </text>
+    <text x="32" y="130" class="l4">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>Angular · React · REST APIs</tspan>
+    </text>
+    <text x="32" y="154" class="l5">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>PostgreSQL · MongoDB · MySQL</tspan>
+    </text>
+    <text x="32" y="178" class="l6">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>Azure Fundamentals · Growing ☁</tspan>
+    </text>
+    <text x="32" y="202" class="l7">
+      <tspan class="dim">│  </tspan>
+      <tspan class="bright">▶ </tspan>
+      <tspan>Chennai, India  📍</tspan>
+    </text>
+    <text x="32" y="226" class="l8 dim">└──────────────────────────────────────────────────────────┘</text>
+
+    <!-- separator -->
+    <text x="32" y="268" class="l8 dim">$ ──────────────────────────────────────────────────────────</text>
+
+    <!-- fun tagline -->
+    <text x="32" y="298" class="l8">
+      <tspan class="dim">$ </tspan>
+      <tspan>echo  </tspan>
+      <tspan class="bright">"I build software. I break things. I learn fast."</tspan>
+    </text>
+
+    <text x="32" y="334" class="l8">
+      <tspan class="dim">$ </tspan>
+      <tspan>status </tspan>
+      <tspan class="bright">--learning Azure · writing clean code · shipping games</tspan>
+    </text>
+
+    <!-- blinking cursor -->
+    <text x="32" y="368" class="cursor">
+      <tspan class="dim">$ </tspan>
+      <tspan class="bright">█</tspan>
+    </text>
+
+  </g>
+
+  <!-- scanline overlay on top -->
+  <rect x="14" y="14" width="772" height="372" rx="6" ry="6"
+        fill="url(#scanlines)" opacity="1" />
+
+</svg>
