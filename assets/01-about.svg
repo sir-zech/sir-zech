@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" width="760" height="360">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.dk{fill:#0a0a0f}
+      .fl{animation:flicker 9s linear infinite}
+      .glow-b{animation:glowb 3s ease-in-out infinite alternate}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes flicker{0%,100%{opacity:1}91%{opacity:1}92%{opacity:.8}93%{opacity:1}97%{opacity:.88}98%{opacity:1}}
+      @keyframes glowb{from{fill:#0f0f1a}to{fill:#111118}}
+      @keyframes march{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
+      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s 1.0s both}
+      .l3{animation:fi .05s 1.7s both}.l4{animation:fi .05s 2.4s both}
+      .l5{animation:fi .05s 3.1s both}.l6{animation:fi .05s 3.8s both}
+      .l7{animation:fi .05s 4.5s both}.l8{animation:fi .05s 5.2s both}
+      .cur{animation:fi .05s 5.5s both,blink 1s 5.5s step-end infinite}
+      .top-march{stroke-dasharray:8 4;animation:march .7s linear infinite}
+    </style>
+  </defs>
+
+  <!-- body — open bottom so it flows into next SVG -->
+  <rect width="760" height="360" rx="12" ry="12" fill="#0d0d16"/>
+  <!-- open bottom: cover bottom-radius with a flush rect -->
+  <rect x="0" y="340" width="760" height="20" fill="#0d0d16"/>
+
+  <!-- top marching border -->
+  <rect x="0" y="0" width="760" height="360" rx="12" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-dasharray="8 4" class="top-march"/>
+  <!-- left + right solid sides, cover dash on sides -->
+  <line x1="0" y1="12" x2="0" y2="360" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="12" x2="760" y2="360" stroke="#f5c842" stroke-width="1.5"/>
+  <!-- top solid border over dash -->
+  <line x1="12" y1="0" x2="748" y2="0" stroke="#f5c842" stroke-width="1.5"/>
+
+  <!-- traffic lights -->
+  <circle cx="30" cy="22" r="5" fill="#ff5f57"/>
+  <circle cx="50" cy="22" r="5" fill="#febc2e"/>
+  <circle cx="70" cy="22" r="5" fill="#28c840"/>
+  <text x="380" y="26" text-anchor="middle" class="m mid" style="font-size:11px">naveen@dev: ~/about  —  zsh</text>
+  <line x1="0" y1="36" x2="760" y2="36" stroke="#f5c842" stroke-width=".5" opacity=".25"/>
+
+  <!-- scanlines -->
+  <rect x="0" y="0" width="760" height="360" fill="url(#sl)"/>
+
+  <!-- content -->
+  <text x="32" y="64" class="m l1"><tspan class="dim">$ </tspan><tspan class="bright">whoami</tspan></text>
+  <text x="32" y="90"  class="m l2 dim" style="font-size:14px">&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+  <text x="32" y="114" class="m l3" style="font-size:14px"><tspan class="dim">&#x2502;  </tspan><tspan class="bright">&#9658; </tspan><tspan class="gold">Naveen B  //  Full Stack Developer</tspan></text>
+  <text x="32" y="138" class="m l4" style="font-size:14px"><tspan class="dim">&#x2502;  </tspan><tspan class="bright">&#9658; </tspan><tspan class="gold">B.E. CSE — Class of 2025  ·  Chennai, India</tspan></text>
+  <text x="32" y="162" class="m l5" style="font-size:14px"><tspan class="dim">&#x2502;  </tspan><tspan class="bright">&#9658; </tspan><tspan class="gold">Building full stack apps · growing into the cloud</tspan></text>
+  <text x="32" y="186" class="m l6" style="font-size:14px"><tspan class="dim">&#x2502;  </tspan><tspan class="bright">&#9658; </tspan><tspan class="gold">Currently learning: C# · ASP.NET · Azure</tspan></text>
+  <text x="32" y="210" class="m l7" style="font-size:14px"><tspan class="dim">&#x2502;  </tspan><tspan class="bright">&#9658; </tspan><tspan class="gold">Also ships browser games for fun</tspan></text>
+  <text x="32" y="234" class="m l8 dim" style="font-size:14px">&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+
+  <!-- quote -->
+  <text x="32" y="274" class="m l8" style="font-size:12px;animation-delay:5.6s"><tspan class="dim">"</tspan><tspan class="mid">First, solve the problem. Then, write the code.</tspan><tspan class="dim">"  — John Johnson</tspan></text>
+
+  <!-- prompt cursor -->
+  <text x="32" y="320" class="m cur" style="font-size:14px"><tspan class="dim">$ </tspan><tspan class="bright">&#9608;</tspan></text>
+</svg>
