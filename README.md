@@ -24,7 +24,7 @@
 <img src="https://streak-stats.demolab.com/?user=sir-zech&theme=gruvbox&border_radius=8&date_format=j%20M%5B%20Y%5D" width="48%"/>
 
 <!-- Top Languages — using github-readme-stats (compact, gruvbox) -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sir-zech&layout=compact&theme=gruvbox&border_radius=8&hide_border=false&langs_count=8" width="40%"/>
+<!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sir-zech&layout=compact&theme=gruvbox&border_radius=8&hide_border=false&langs_count=8" width="40%"/> -->
 
 <br/>
 
