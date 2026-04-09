@@ -117,43 +117,23 @@ $ cat about_me.txt
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║               > PROJECTS --show notable                      ║
+║               > GAMES --hobby.exe                            ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
 </div>
 
 ```bash
-$ ls -la ~/projects/
+$ ./run_games --list
 ```
 
-| # | Project | Stack | Description |
-|---|---------|-------|-------------|
-| 🏥 | **MediCareBook** | MERN · TypeScript · JWT · Redux | Doctor appointment booking system with auth, user roles & admin dashboard |
-| 🌦️ | **Pixel Weather** | React · Node.js · MongoDB · OpenWeatherMap | Retro-style real-time weather app |
-| ✈️ | **Magical Travel** | React · Node.js · MongoDB | Flight booking platform with search & booking management |
-| 🎬 | **Netflix Clone** | React · Node.js · MongoDB | Netflix landing page replica with hero section & show thumbnails |
-| ✅ | **To-Do App** | Flutter Web | Task manager with create, edit & organize features |
+> 🕹️ I build **browser-based games** for fun — no install, just click and play!
 
----
-
-<div align="center">
-
-```
-╔══════════════════════════════════════════════════════════════╗
-║              > CERTIFICATIONS --verified                     ║
-╚══════════════════════════════════════════════════════════════╝
-```
-
-</div>
-
-```
- [✔]  IBM Journey to Cloud
- [✔]  MongoDB Node.js Developer Path
- [✔]  Oracle Cloud Infrastructure Foundations
- [✔]  CISCO Networking Essentials
- [✔]  NPTEL — scored 98%
-```
+| 🎮 Game | Description | Play |
+|--------|-------------|------|
+| 🔥 **FLAMES** | The classic compatibility game — find your relationship destiny! | [▶ Play Now](https://flames-sirzech.netlify.app/) |
+| 🎩 **Omerta** | Mafia-style game of deception, bluffing & deduction | [▶ Play Now](https://mafia-sirzech.netlify.app/) |
+| 🚧 **???** | Next game loading... | `[ stay tuned 👀 ]` |
 
 ---
 
@@ -165,12 +145,12 @@ $ ls -la ~/projects/
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-<img src="https://github-readme-stats.vercel.app/api?username=sir-zech&show_icons=true&theme=gruvbox&border_radius=8" width="48%" />
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=sir-zech&theme=gruvbox&border_radius=8" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api?username=sir-zech&show_icons=true&theme=gruvbox&border_radius=8&cache_seconds=1800" width="48%" />
+<img src="https://streak-stats.demolab.com/?user=sir-zech&theme=gruvbox&border_radius=8" width="48%" />
 
 <br/>
 
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sir-zech&layout=compact&theme=gruvbox&border_radius=8" width="40%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sir-zech&layout=compact&theme=gruvbox&border_radius=8&cache_seconds=1800" width="40%" />
 
 </div>
 
