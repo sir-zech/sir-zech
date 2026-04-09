@@ -4,23 +4,23 @@
       <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
     </pattern>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
-      .m{font-family:'Share Tech Mono','Courier New',monospace}
-      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.dk{fill:#0a0a0f}
-      .fl{animation:flicker 9s linear infinite}
-      .glow-b{animation:glowb 3s ease-in-out infinite alternate}
-      @keyframes fi{from{opacity:0}to{opacity:1}}
-      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-      @keyframes flicker{0%,100%{opacity:1}91%{opacity:1}92%{opacity:.8}93%{opacity:1}97%{opacity:.88}98%{opacity:1}}
-      @keyframes glowb{from{fill:#0f0f1a}to{fill:#111118}}
-      @keyframes march{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
-      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s 1.0s both}
-      .l3{animation:fi .05s 1.7s both}.l4{animation:fi .05s 2.4s both}
-      .l5{animation:fi .05s 3.1s both}.l6{animation:fi .05s 3.8s both}
-      .l7{animation:fi .05s 4.5s both}.l8{animation:fi .05s 5.2s both}
-      .cur{animation:fi .05s 5.5s both,blink 1s 5.5s step-end infinite}
-      .top-march{stroke-dasharray:8 4;animation:march .7s linear infinite}
-    </style>
+  .m { font-family: monospace; }
+
+  @keyframes borderFlow {
+    from { stroke-dashoffset: 0; }
+    to   { stroke-dashoffset: -24; }
+  }
+
+  .border-run {
+    stroke-dasharray: 8 4;
+    animation: borderFlow 1s linear infinite;
+  }
+
+  /* OPTIONAL glow (GitHub-safe mild version) */
+  .glow-mid {
+    filter: drop-shadow(0 0 3px #f5c84288);
+  }
+</style>
   </defs>
 
   <!-- body — open bottom so it flows into next SVG -->
@@ -29,7 +29,41 @@
   <rect x="0" y="340" width="760" height="20" fill="#0d0d16"/>
 
   <!-- top marching border -->
-  <rect x="0" y="0" width="760" height="360" rx="12" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-dasharray="8 4" class="top-march"/>
+ <!-- smooth continuous border (open bottom) -->
+<path
+  d="
+    M12 0
+    H748
+    A12 12 0 0 1 760 12
+    V360
+    M0 360
+    V12
+    A12 12 0 0 1 12 0
+  "
+  fill="none"
+  stroke="#f5c842"
+  stroke-width="1.5"
+/>
+
+<!-- animated top stroke only -->
+<path
+  d="
+    M12 0
+    H748
+    A12 12 0 0 1 760 12
+  "
+  fill="none"
+  stroke="#f5c842"
+  stroke-width="1.5"
+  stroke-dasharray="8 4"
+  class="top-march"
+/>
+
+  <path d="M12 0 H748 A12 12 0 0 1 760 12 V348 A12 12 0 0 1 748 360 H12 A12 12 0 0 1 0 348 V12 A12 12 0 0 1 12 0"
+      fill="none"
+      stroke="#f5c842"
+      stroke-width="1.5"
+      class="border-run"/>
   <!-- left + right solid sides, cover dash on sides -->
   <line x1="0" y1="12" x2="0" y2="360" stroke="#f5c842" stroke-width="1.5"/>
   <line x1="760" y1="12" x2="760" y2="360" stroke="#f5c842" stroke-width="1.5"/>
