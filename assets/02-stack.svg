@@ -1,84 +1,136 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 480" width="760" height="480" role="img">
+  <title>Tech Stack Terminal</title>
+  <desc>Animated terminal-style tech stack visualization with console loading effects</desc>
   <defs>
     <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
-      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+      <rect width="760" height="1" fill="rgba(0,0,0,0.07)"/>
     </pattern>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
       .m{font-family:'Share Tech Mono','Courier New',monospace}
-      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.grn{fill:#5ab83a}
-      .fl{animation:flicker 9s linear infinite}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.grn{fill:#5ab83a}
+
       @keyframes fi{from{opacity:0}to{opacity:1}}
-      @keyframes pop{0%{opacity:0;transform:scale(.5)}100%{opacity:1;transform:scale(1)}}
-      @keyframes flicker{0%,100%{opacity:1}92%{opacity:.8}93%{opacity:1}97%{opacity:.88}}
-      .cat1{animation:fi .05s .3s both}  .cat2{animation:fi .05s 1.6s both}
-      .cat3{animation:fi .05s 2.9s both} .cat4{animation:fi .05s 3.9s both}
-      .p1a{animation:pop .12s .5s both}.p1b{animation:pop .12s .65s both}.p1c{animation:pop .12s .8s both}
-      .p1d{animation:pop .12s .95s both}.p1e{animation:pop .12s 1.1s both}.p1f{animation:pop .12s 1.25s both}
-      .p2a{animation:pop .12s 1.8s both}.p2b{animation:pop .12s 1.95s both}.p2c{animation:pop .12s 2.1s both}
-      .p2d{animation:pop .12s 2.25s both}.p2e{animation:pop .12s 2.4s both}.p2f{animation:pop .12s 2.55s both}
-      .p3a{animation:pop .12s 3.1s both}.p3b{animation:pop .12s 3.25s both}.p3c{animation:pop .12s 3.4s both}
-      .p4a{animation:pop .12s 4.1s both}.p4b{animation:pop .12s 4.25s both}.p4c{animation:pop .12s 4.4s both}
-      .p4d{animation:pop .12s 4.55s both}.p4e{animation:pop .12s 4.7s both}
-      .leg{animation:fi .05s 5.0s both}
+      @keyframes pop{0%{opacity:0;transform:scale(.85)}100%{opacity:1;transform:scale(1)}}
+      @keyframes blink{0%,49%{opacity:1}50%,99%{opacity:0}}
+      @keyframes scanline{0%{transform:translateY(0)}100%{transform:translateY(480px)}}
+      @keyframes flicker{0%,100%{opacity:1}92%{opacity:.82}93.5%{opacity:1}97%{opacity:.9}98%{opacity:1}}
+      @keyframes runbar{0%{width:0}100%{width:180px}}
+      @keyframes fadebar{0%,85%{opacity:1}100%{opacity:0}}
+      @keyframes growbar{0%{width:0;opacity:1}70%{width:110px;opacity:1}85%{width:110px;opacity:.6}100%{width:0;opacity:0}}
+
+      .screen{animation:flicker 8s 2s linear infinite}
+      .boot1{animation:fi .01s 0.0s both}
+      .boot2{animation:fi .01s 0.4s both}
+      .boot3{animation:fi .01s 0.7s both}
+      .boot4{animation:fi .01s 1.05s both}
+      .boot5{animation:fi .01s 1.35s both}
+
+      .bar-outer{opacity:0;animation:fi .01s 1.6s both}
+      .bar-fill{animation:runbar 1.2s 1.65s cubic-bezier(.4,0,.2,1) both, fadebar .3s 2.9s both}
+      .bar-done{animation:fi .01s 2.85s both}
+
+      .cat1{animation:fi .01s 3.1s both}
+      .cat2{animation:fi .01s 4.5s both}
+      .cat3{animation:fi .01s 5.8s both}
+      .cat4{animation:fi .01s 6.9s both}
+
+      .p1a{animation:pop .1s 3.3s both}.p1b{animation:pop .1s 3.45s both}.p1c{animation:pop .1s 3.6s both}
+      .p1d{animation:pop .1s 3.75s both}.p1e{animation:pop .1s 3.9s both}.p1f{animation:pop .1s 4.05s both}
+
+      .p2a{animation:pop .1s 4.7s both}.p2b{animation:pop .1s 4.85s both}.p2c{animation:pop .1s 5.0s both}
+      .p2d{animation:pop .1s 5.15s both}.p2e{animation:pop .1s 5.3s both}.p2f{animation:pop .1s 5.45s both}
+
+      .p3a{animation:pop .1s 6.0s both}.p3b{animation:pop .1s 6.15s both}.p3c{animation:pop .1s 6.3s both}
+
+      .p4a{animation:pop .1s 7.1s both}.p4b{animation:pop .1s 7.25s both}.p4c{animation:pop .1s 7.4s both}
+      .p4d{animation:pop .1s 7.55s both}.p4e{animation:pop .1s 7.7s both}
+
+      .growprogress{animation:fi .01s 7.9s both}
+      .growbar-fill{animation:growbar 2.2s 8.0s ease-in-out infinite}
+
+      .leg{animation:fi .01s 8.1s both}
+      .status{animation:fi .01s 8.4s both}
+      .cursor{animation:blink 1s 8.5s step-end infinite}
     </style>
   </defs>
 
-  <!-- seamless bg: no top radius, no bottom radius -->
-  <rect width="760" height="420" fill="#0d0d16"/>
-  <!-- left right bottom borders -->
-  <line x1="0" y1="0" x2="0" y2="420" stroke="#f5c842" stroke-width="1.5"/>
-  <line x1="760" y1="0" x2="760" y2="420" stroke="#f5c842" stroke-width="1.5"/>
-  <!-- section label -->
+  <rect width="760" height="480" fill="#0d0d16" class="screen"/>
+  <rect width="760" height="480" fill="url(#sl)"/>
+  <rect x="0" y="-6" width="760" height="6" fill="rgba(255,255,180,0.025)" style="animation:scanline 5s 2s linear infinite"/>
+
+  <line x1="0" y1="0" x2="0" y2="480" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="480" stroke="#f5c842" stroke-width="1.5"/>
   <line x1="0" y1="0" x2="760" y2="0" stroke="#f5c842" stroke-width=".4" opacity=".2"/>
+  <line x1="0" y1="480" x2="760" y2="480" stroke="#f5c842" stroke-width=".4" opacity=".2"/>
 
-  <rect width="760" height="420" fill="url(#sl)"/>
+  <text x="32" y="22" class="m boot1" style="font-size:11px;fill:#3a6a2a">[ OK ] Initializing skill matrix...</text>
+  <text x="32" y="36" class="m boot2" style="font-size:11px;fill:#3a6a2a">[ OK ] Mounting knowledge blocks...</text>
+  <text x="32" y="50" class="m boot3" style="font-size:11px;fill:#b8992e">[ .. ] Loading tech_stack.cfg</text>
+  <text x="32" y="64" class="m boot4" style="font-size:11px;fill:#3a6a2a">[ OK ] tech_stack.cfg loaded</text>
+  <text x="32" y="78" class="m boot5" style="font-size:11px;fill:#4a3c0e">$ run --profile skills --verbose</text>
 
-  <text x="32" y="38" class="m dim cat1" style="font-size:11px">// ── tech_stack ────────────────────────────────────────────────────────────────</text>
-
-  <!-- backend -->
-  <text x="32" y="66" class="m dim cat1" style="font-size:12px">// backend</text>
-  <g class="p1a"><rect x="32" y="74" width="90" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="77" y="91" text-anchor="middle" class="m gold" style="font-size:12px">Java</text></g>
-  <g class="p1b"><rect x="130" y="74" width="114" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="187" y="91" text-anchor="middle" class="m gold" style="font-size:12px">Spring Boot</text></g>
-  <g class="p1c"><rect x="252" y="74" width="100" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="302" y="91" text-anchor="middle" class="m gold" style="font-size:12px">REST APIs</text></g>
-  <g class="p1d"><rect x="360" y="74" width="54" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="387" y="91" text-anchor="middle" class="m mid" style="font-size:12px">C#</text></g>
-  <g class="p1e"><rect x="422" y="74" width="96" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="470" y="91" text-anchor="middle" class="m mid" style="font-size:12px">ASP.NET</text></g>
-  <g class="p1f"><rect x="526" y="74" width="84" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="568" y="91" text-anchor="middle" class="m mid" style="font-size:12px">Node.js</text></g>
-
-  <!-- frontend -->
-  <text x="32" y="128" class="m dim cat2" style="font-size:12px">// frontend</text>
-  <g class="p2a"><rect x="32" y="136" width="84" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="74" y="153" text-anchor="middle" class="m gold" style="font-size:12px">Angular</text></g>
-  <g class="p2b"><rect x="124" y="136" width="70" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="159" y="153" text-anchor="middle" class="m gold" style="font-size:12px">React</text></g>
-  <g class="p2c"><rect x="202" y="136" width="108" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="256" y="153" text-anchor="middle" class="m gold" style="font-size:12px">TypeScript</text></g>
-  <g class="p2d"><rect x="318" y="136" width="112" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="374" y="153" text-anchor="middle" class="m mid" style="font-size:12px">JavaScript</text></g>
-  <g class="p2e"><rect x="438" y="136" width="94" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="485" y="153" text-anchor="middle" class="m mid" style="font-size:12px">Bootstrap</text></g>
-  <g class="p2f"><rect x="540" y="136" width="78" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="579" y="153" text-anchor="middle" class="m mid" style="font-size:12px">Tailwind</text></g>
-
-  <!-- databases -->
-  <text x="32" y="190" class="m dim cat3" style="font-size:12px">// databases</text>
-  <g class="p3a"><rect x="32" y="198" width="110" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="87" y="215" text-anchor="middle" class="m gold" style="font-size:12px">PostgreSQL</text></g>
-  <g class="p3b"><rect x="150" y="198" width="94" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="197" y="215" text-anchor="middle" class="m gold" style="font-size:12px">MongoDB</text></g>
-  <g class="p3c"><rect x="252" y="198" width="70" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="287" y="215" text-anchor="middle" class="m mid" style="font-size:12px">MySQL</text></g>
-
-  <!-- cloud + tools -->
-  <text x="32" y="252" class="m dim cat4" style="font-size:12px">// cloud + tools  <tspan style="fill:#3a6a2a">// growing ☁</tspan></text>
-  <g class="p4a"><rect x="32" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="67" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Azure</text></g>
-  <g class="p4b"><rect x="110" y="260" width="80" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="150" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Postman</text></g>
-  <g class="p4c"><rect x="198" y="260" width="118" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="257" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Visual Studio</text></g>
-  <g class="p4d"><rect x="324" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="359" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Eclipse</text></g>
-  <g class="p4e"><rect x="402" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="437" y="277" text-anchor="middle" class="m grn" style="font-size:12px">VS Code</text></g>
-
-  <!-- legend -->
-  <g class="leg">
-    <rect x="32" y="316" width="12" height="12" rx="2" fill="none" stroke="#f5c842" stroke-width="1"/>
-    <text x="50" y="327" class="m mid" style="font-size:11px">confident</text>
-    <rect x="138" y="316" width="12" height="12" rx="2" fill="none" stroke="#b8992e" stroke-width="1"/>
-    <text x="156" y="327" class="m mid" style="font-size:11px">working knowledge</text>
-    <rect x="316" y="316" width="12" height="12" rx="2" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="3 2"/>
-    <text x="334" y="327" class="m grn" style="font-size:11px">learning / growing</text>
-    <text x="32" y="378" class="m dim" style="font-size:11px">$ status --skills  <tspan fill="#ffe066">all systems operational</tspan></text>
+  <g class="bar-outer">
+    <text x="32" y="94" class="m" style="font-size:11px;fill:#4a3c0e">Progress [</text>
+    <rect x="110" y="83" width="180" height="10" rx="1" fill="none" stroke="#3a5a1a" stroke-width="1"/>
+    <rect x="110" y="83" width="0" height="10" rx="1" fill="#2a7a1a" class="bar-fill"/>
+    <text x="297" y="94" class="m" style="font-size:11px;fill:#4a3c0e">]</text>
+    <text x="310" y="94" class="m bar-done" style="font-size:11px;fill:#5ab83a">100%  done.</text>
   </g>
 
-  <!-- bottom blend -->
-  <rect x="0" y="400" width="760" height="20" fill="#0d0d16"/>
+  <line x1="32" y1="104" x2="728" y2="104" stroke="#f5c842" stroke-width=".4" opacity=".18" style="animation:fi .01s 3.0s both"/>
+  <text x="32" y="119" class="m dim cat1" style="font-size:11px">// ── tech_stack ──────────────────────────────────────────────────────────────</text>
+
+  <text x="32" y="143" class="m dim cat1" style="font-size:12px">// backend</text>
+  <g class="p1a"><rect x="32" y="151" width="90" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="77" y="168" text-anchor="middle" class="m gold" style="font-size:12px">Java</text></g>
+  <g class="p1b"><rect x="130" y="151" width="114" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="187" y="168" text-anchor="middle" class="m gold" style="font-size:12px">Spring Boot</text></g>
+  <g class="p1c"><rect x="252" y="151" width="100" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="302" y="168" text-anchor="middle" class="m gold" style="font-size:12px">REST APIs</text></g>
+  <g class="p1d"><rect x="360" y="151" width="54" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="387" y="168" text-anchor="middle" class="m mid" style="font-size:12px">C#</text></g>
+  <g class="p1e"><rect x="422" y="151" width="96" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="470" y="168" text-anchor="middle" class="m mid" style="font-size:12px">ASP.NET</text></g>
+  <g class="p1f"><rect x="526" y="151" width="84" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="568" y="168" text-anchor="middle" class="m mid" style="font-size:12px">Node.js</text></g>
+
+  <text x="32" y="205" class="m dim cat2" style="font-size:12px">// frontend</text>
+  <g class="p2a"><rect x="32" y="213" width="84" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="74" y="230" text-anchor="middle" class="m gold" style="font-size:12px">Angular</text></g>
+  <g class="p2b"><rect x="124" y="213" width="70" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="159" y="230" text-anchor="middle" class="m gold" style="font-size:12px">React</text></g>
+  <g class="p2c"><rect x="202" y="213" width="108" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="256" y="230" text-anchor="middle" class="m gold" style="font-size:12px">TypeScript</text></g>
+  <g class="p2d"><rect x="318" y="213" width="112" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="374" y="230" text-anchor="middle" class="m mid" style="font-size:12px">JavaScript</text></g>
+  <g class="p2e"><rect x="438" y="213" width="94" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="485" y="230" text-anchor="middle" class="m mid" style="font-size:12px">Bootstrap</text></g>
+  <g class="p2f"><rect x="540" y="213" width="78" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="579" y="230" text-anchor="middle" class="m mid" style="font-size:12px">Tailwind</text></g>
+
+  <text x="32" y="267" class="m dim cat3" style="font-size:12px">// databases</text>
+  <g class="p3a"><rect x="32" y="275" width="110" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="87" y="292" text-anchor="middle" class="m gold" style="font-size:12px">PostgreSQL</text></g>
+  <g class="p3b"><rect x="150" y="275" width="94" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="197" y="292" text-anchor="middle" class="m gold" style="font-size:12px">MongoDB</text></g>
+  <g class="p3c"><rect x="252" y="275" width="70" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="287" y="292" text-anchor="middle" class="m mid" style="font-size:12px">MySQL</text></g>
+
+  <text x="32" y="329" class="m dim cat4" style="font-size:12px">// cloud + tools  <tspan style="fill:#3a6a2a">// growing</tspan></text>
+  <g class="p4a"><rect x="32" y="337" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="67" y="354" text-anchor="middle" class="m grn" style="font-size:12px">Azure</text></g>
+  <g class="p4b"><rect x="110" y="337" width="80" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="150" y="354" text-anchor="middle" class="m grn" style="font-size:12px">Postman</text></g>
+  <g class="p4c"><rect x="198" y="337" width="118" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="257" y="354" text-anchor="middle" class="m grn" style="font-size:12px">Visual Studio</text></g>
+  <g class="p4d"><rect x="324" y="337" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="359" y="354" text-anchor="middle" class="m grn" style="font-size:12px">Eclipse</text></g>
+  <g class="p4e"><rect x="402" y="337" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="437" y="354" text-anchor="middle" class="m grn" style="font-size:12px">VS Code</text></g>
+
+  <g class="growprogress">
+    <text x="32" y="383" class="m" style="font-size:11px;fill:#3a6a2a">loading [</text>
+    <rect x="96" y="372" width="110" height="8" rx="1" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="3 2"/>
+    <rect x="96" y="372" width="0" height="8" rx="1" fill="#3a8a1a" class="growbar-fill"/>
+    <text x="212" y="383" class="m" style="font-size:11px;fill:#3a6a2a">]  in progress...</text>
+  </g>
+
+  <line x1="32" y1="397" x2="728" y2="397" stroke="#f5c842" stroke-width=".4" opacity=".18" class="leg"/>
+
+  <g class="leg">
+    <rect x="32" y="407" width="12" height="12" rx="2" fill="none" stroke="#f5c842" stroke-width="1"/>
+    <text x="50" y="418" class="m mid" style="font-size:11px">confident</text>
+    <rect x="138" y="407" width="12" height="12" rx="2" fill="none" stroke="#b8992e" stroke-width="1"/>
+    <text x="156" y="418" class="m mid" style="font-size:11px">working knowledge</text>
+    <rect x="316" y="407" width="12" height="12" rx="2" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="334" y="418" class="m grn" style="font-size:11px">learning / growing</text>
+  </g>
+
+  <g class="status">
+    <text x="32" y="447" class="m" style="font-size:11px;fill:#4a3c0e">$ status --skills  <tspan fill="#ffe066">all systems operational</tspan></text>
+    <rect x="432" y="436" width="7" height="12" fill="#ffe066" class="cursor"/>
+  </g>
+
+  <rect x="0" y="462" width="760" height="18" fill="#0d0d16"/>
 </svg>
