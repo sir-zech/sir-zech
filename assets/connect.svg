@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 230" width="760" height="230">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.10)"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#5a4a10}.mid{fill:#b8992e}.bright{fill:#ffe066}
+      .fl{animation:flicker 7s linear infinite}
+      .glow{animation:glow 2.5s ease-in-out infinite alternate}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes pop{0%{opacity:0;transform:scale(.7)}100%{opacity:1;transform:scale(1)}}
+      @keyframes flicker{0%,100%{opacity:1}92%{opacity:.82}93%{opacity:1}97%{opacity:.9}}
+      @keyframes glow{from{stroke:#7a6020}to{stroke:#ffe066}}
+      .l1{animation:fi .05s .3s both}
+      .c1{animation:pop .2s .8s both}
+      .c2{animation:pop .2s 1.2s both}
+      .c3{animation:pop .2s 1.6s both}
+      .q1{animation:fi .05s 2.2s both}
+      .q2{animation:fi .05s 2.8s both}
+    </style>
+  </defs>
+  <rect width="760" height="230" rx="10" fill="#0d0d14" stroke="#f5c842" stroke-width="1.5" class="glow"/>
+  <rect x="12" y="12" width="736" height="206" rx="6" fill="#0a0a0f" class="fl"/>
+  <circle cx="30" cy="28" r="5" fill="#ff5f57"/>
+  <circle cx="48" cy="28" r="5" fill="#febc2e"/>
+  <circle cx="66" cy="28" r="5" fill="#28c840"/>
+  <text x="380" y="32" text-anchor="middle" class="m mid" style="font-size:11px">naveen@dev: ~/connect</text>
+  <line x1="12" y1="40" x2="748" y2="40" stroke="#f5c842" stroke-width=".5" opacity=".3"/>
+
+  <text x="28" y="70" class="m l1"><tspan class="dim">$ </tspan><tspan class="bright">ping --me</tspan></text>
+
+  <g class="c1">
+    <rect x="28" y="82" width="210" height="44" rx="4" fill="rgba(245,200,66,0.05)" stroke="#f5c842" stroke-width="1"/>
+    <text x="48" y="101" class="m bright" style="font-size:13px">GitHub</text>
+    <text x="48" y="117" class="m dim" style="font-size:10px">github.com/sir-zech</text>
+  </g>
+  <g class="c2">
+    <rect x="256" y="82" width="210" height="44" rx="4" fill="rgba(245,200,66,0.05)" stroke="#f5c842" stroke-width="1"/>
+    <text x="276" y="101" class="m bright" style="font-size:13px">LinkedIn</text>
+    <text x="276" y="117" class="m dim" style="font-size:10px">linkedin.com/in/sirzech</text>
+  </g>
+  <g class="c3">
+    <rect x="484" y="82" width="210" height="44" rx="4" fill="rgba(245,200,66,0.05)" stroke="#f5c842" stroke-width="1"/>
+    <text x="504" y="101" class="m bright" style="font-size:13px">Portfolio</text>
+    <text x="504" y="117" class="m dim" style="font-size:10px">sirzech.netlify.app</text>
+  </g>
+
+  <text x="28" y="158" class="m mid q1" style="font-size:11px">"Any fool can write code a computer understands.</text>
+  <text x="28" y="176" class="m mid q2" style="font-size:11px"> Good programmers write code humans understand."</text>
+  <text x="28" y="196" class="m dim q2" style="font-size:10px">                                          — Martin Fowler</text>
+
+  <rect x="12" y="12" width="736" height="206" rx="6" fill="url(#sl)"/>
+</svg>
