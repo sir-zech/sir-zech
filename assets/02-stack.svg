@@ -7,24 +7,10 @@
       @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
       .m{font-family:'Share Tech Mono','Courier New',monospace}
       .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.grn{fill:#5ab83a}
-
-      /* NEW: more visible motion */
-      .blink{animation:blink 1s steps(2,start) infinite}
-      .blinkSlow{animation:blink 1.8s steps(2,start) infinite}
-      .float{animation:float 3s ease-in-out infinite}
-      .scanFast{animation:scanFast 3s linear infinite}
-      .dashMove{stroke-dasharray:6 4; animation:dash 2s linear infinite}
-      .shimmer{animation:shimmer 2.5s linear infinite}
-
-      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-      @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-      @keyframes scanFast{0%{transform:translateY(-20px)}100%{transform:translateY(20px)}}
-      @keyframes dash{to{stroke-dashoffset:-20}}
-      @keyframes shimmer{0%{opacity:.6}50%{opacity:1}100%{opacity:.6}}
-
-      /* keep your original timing */
+      .fl{animation:flicker 9s linear infinite}
       @keyframes fi{from{opacity:0}to{opacity:1}}
       @keyframes pop{0%{opacity:0;transform:scale(.5)}100%{opacity:1;transform:scale(1)}}
+      @keyframes flicker{0%,100%{opacity:1}92%{opacity:.8}93%{opacity:1}97%{opacity:.88}}
       .cat1{animation:fi .05s .3s both}  .cat2{animation:fi .05s 1.6s both}
       .cat3{animation:fi .05s 2.9s both} .cat4{animation:fi .05s 3.9s both}
       .p1a{animation:pop .12s .5s both}.p1b{animation:pop .12s .65s both}.p1c{animation:pop .12s .8s both}
@@ -38,54 +24,49 @@
     </style>
   </defs>
 
-  <!-- bg -->
+  <!-- seamless bg: no top radius, no bottom radius -->
   <rect width="760" height="420" fill="#0d0d16"/>
-
-  <!-- animated borders -->
-  <line x1="0" y1="0" x2="0" y2="420" stroke="#f5c842" stroke-width="1.5" class="dashMove"/>
-  <line x1="760" y1="0" x2="760" y2="420" stroke="#f5c842" stroke-width="1.5" class="dashMove"/>
+  <!-- left right bottom borders -->
+  <line x1="0" y1="0" x2="0" y2="420" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="420" stroke="#f5c842" stroke-width="1.5"/>
+  <!-- section label -->
   <line x1="0" y1="0" x2="760" y2="0" stroke="#f5c842" stroke-width=".4" opacity=".2"/>
 
-  <!-- fast moving scanline -->
-  <rect width="760" height="420" fill="url(#sl)" class="scanFast"/>
+  <rect width="760" height="420" fill="url(#sl)"/>
 
-  <!-- title with blinking cursor -->
-  <text x="32" y="38" class="m dim cat1" style="font-size:11px">
-    // ── tech_stack ───────────────────────────────────────────────
-    <tspan class="bright blink">_</tspan>
-  </text>
+  <text x="32" y="38" class="m dim cat1" style="font-size:11px">// ── tech_stack ────────────────────────────────────────────────────────────────</text>
 
   <!-- backend -->
-  <text x="32" y="66" class="m dim cat1 blinkSlow" style="font-size:12px">// backend</text>
-  <g class="p1a float shimmer"><rect x="32" y="74" width="90" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="77" y="91" text-anchor="middle" class="m gold">Java</text></g>
-  <g class="p1b float"><rect x="130" y="74" width="114" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="187" y="91" text-anchor="middle" class="m gold">Spring Boot</text></g>
-  <g class="p1c float"><rect x="252" y="74" width="100" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="302" y="91" text-anchor="middle" class="m gold">REST APIs</text></g>
-  <g class="p1d float"><rect x="360" y="74" width="54" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="387" y="91" text-anchor="middle" class="m mid">C#</text></g>
-  <g class="p1e float"><rect x="422" y="74" width="96" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="470" y="91" text-anchor="middle" class="m mid">ASP.NET</text></g>
-  <g class="p1f float"><rect x="526" y="74" width="84" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="568" y="91" text-anchor="middle" class="m mid">Node.js</text></g>
+  <text x="32" y="66" class="m dim cat1" style="font-size:12px">// backend</text>
+  <g class="p1a"><rect x="32" y="74" width="90" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="77" y="91" text-anchor="middle" class="m gold" style="font-size:12px">Java</text></g>
+  <g class="p1b"><rect x="130" y="74" width="114" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="187" y="91" text-anchor="middle" class="m gold" style="font-size:12px">Spring Boot</text></g>
+  <g class="p1c"><rect x="252" y="74" width="100" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="302" y="91" text-anchor="middle" class="m gold" style="font-size:12px">REST APIs</text></g>
+  <g class="p1d"><rect x="360" y="74" width="54" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="387" y="91" text-anchor="middle" class="m mid" style="font-size:12px">C#</text></g>
+  <g class="p1e"><rect x="422" y="74" width="96" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="470" y="91" text-anchor="middle" class="m mid" style="font-size:12px">ASP.NET</text></g>
+  <g class="p1f"><rect x="526" y="74" width="84" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="568" y="91" text-anchor="middle" class="m mid" style="font-size:12px">Node.js</text></g>
 
   <!-- frontend -->
-  <text x="32" y="128" class="m dim cat2 blinkSlow" style="font-size:12px">// frontend</text>
-  <g class="p2a float"><rect x="32" y="136" width="84" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="74" y="153" text-anchor="middle" class="m gold">Angular</text></g>
-  <g class="p2b float shimmer"><rect x="124" y="136" width="70" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="159" y="153" text-anchor="middle" class="m gold">React</text></g>
-  <g class="p2c float"><rect x="202" y="136" width="108" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="256" y="153" text-anchor="middle" class="m gold">TypeScript</text></g>
-  <g class="p2d float"><rect x="318" y="136" width="112" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="374" y="153" text-anchor="middle" class="m mid">JavaScript</text></g>
-  <g class="p2e float"><rect x="438" y="136" width="94" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="485" y="153" text-anchor="middle" class="m mid">Bootstrap</text></g>
-  <g class="p2f float"><rect x="540" y="136" width="78" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="579" y="153" text-anchor="middle" class="m mid">Tailwind</text></g>
+  <text x="32" y="128" class="m dim cat2" style="font-size:12px">// frontend</text>
+  <g class="p2a"><rect x="32" y="136" width="84" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="74" y="153" text-anchor="middle" class="m gold" style="font-size:12px">Angular</text></g>
+  <g class="p2b"><rect x="124" y="136" width="70" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="159" y="153" text-anchor="middle" class="m gold" style="font-size:12px">React</text></g>
+  <g class="p2c"><rect x="202" y="136" width="108" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="256" y="153" text-anchor="middle" class="m gold" style="font-size:12px">TypeScript</text></g>
+  <g class="p2d"><rect x="318" y="136" width="112" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="374" y="153" text-anchor="middle" class="m mid" style="font-size:12px">JavaScript</text></g>
+  <g class="p2e"><rect x="438" y="136" width="94" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="485" y="153" text-anchor="middle" class="m mid" style="font-size:12px">Bootstrap</text></g>
+  <g class="p2f"><rect x="540" y="136" width="78" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="579" y="153" text-anchor="middle" class="m mid" style="font-size:12px">Tailwind</text></g>
 
   <!-- databases -->
-  <text x="32" y="190" class="m dim cat3 blinkSlow" style="font-size:12px">// databases</text>
-  <g class="p3a float shimmer"><rect x="32" y="198" width="110" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="87" y="215" text-anchor="middle" class="m gold">PostgreSQL</text></g>
-  <g class="p3b float"><rect x="150" y="198" width="94" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="197" y="215" text-anchor="middle" class="m gold">MongoDB</text></g>
-  <g class="p3c float"><rect x="252" y="198" width="70" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="287" y="215" text-anchor="middle" class="m mid">MySQL</text></g>
+  <text x="32" y="190" class="m dim cat3" style="font-size:12px">// databases</text>
+  <g class="p3a"><rect x="32" y="198" width="110" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="87" y="215" text-anchor="middle" class="m gold" style="font-size:12px">PostgreSQL</text></g>
+  <g class="p3b"><rect x="150" y="198" width="94" height="26" rx="3" fill="none" stroke="#f5c842" stroke-width="1"/><text x="197" y="215" text-anchor="middle" class="m gold" style="font-size:12px">MongoDB</text></g>
+  <g class="p3c"><rect x="252" y="198" width="70" height="26" rx="3" fill="none" stroke="#b8992e" stroke-width="1"/><text x="287" y="215" text-anchor="middle" class="m mid" style="font-size:12px">MySQL</text></g>
 
-  <!-- cloud -->
-  <text x="32" y="252" class="m dim cat4 blinkSlow" style="font-size:12px">// cloud + tools  <tspan style="fill:#3a6a2a">// growing ☁</tspan></text>
-  <g class="p4a float"><rect x="32" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="67" y="277" text-anchor="middle" class="m grn">Azure</text></g>
-  <g class="p4b float shimmer"><rect x="110" y="260" width="80" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="150" y="277" text-anchor="middle" class="m grn">Postman</text></g>
-  <g class="p4c float"><rect x="198" y="260" width="118" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="257" y="277" text-anchor="middle" class="m grn">Visual Studio</text></g>
-  <g class="p4d float"><rect x="324" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="359" y="277" text-anchor="middle" class="m grn">Eclipse</text></g>
-  <g class="p4e float"><rect x="402" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="437" y="277" text-anchor="middle" class="m grn">VS Code</text></g>
+  <!-- cloud + tools -->
+  <text x="32" y="252" class="m dim cat4" style="font-size:12px">// cloud + tools  <tspan style="fill:#3a6a2a">// growing ☁</tspan></text>
+  <g class="p4a"><rect x="32" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="67" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Azure</text></g>
+  <g class="p4b"><rect x="110" y="260" width="80" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="150" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Postman</text></g>
+  <g class="p4c"><rect x="198" y="260" width="118" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="257" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Visual Studio</text></g>
+  <g class="p4d"><rect x="324" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="359" y="277" text-anchor="middle" class="m grn" style="font-size:12px">Eclipse</text></g>
+  <g class="p4e"><rect x="402" y="260" width="70" height="26" rx="3" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="4 3"/><text x="437" y="277" text-anchor="middle" class="m grn" style="font-size:12px">VS Code</text></g>
 
   <!-- legend -->
   <g class="leg">
@@ -95,8 +76,9 @@
     <text x="156" y="327" class="m mid" style="font-size:11px">working knowledge</text>
     <rect x="316" y="316" width="12" height="12" rx="2" fill="none" stroke="#2a5a1a" stroke-width="1" stroke-dasharray="3 2"/>
     <text x="334" y="327" class="m grn" style="font-size:11px">learning / growing</text>
-    <text x="32" y="378" class="m dim blink" style="font-size:11px">$ status --skills  <tspan fill="#ffe066">all systems operational</tspan></text>
+    <text x="32" y="378" class="m dim" style="font-size:11px">$ status --skills  <tspan fill="#ffe066">all systems operational</tspan></text>
   </g>
 
+  <!-- bottom blend -->
   <rect x="0" y="400" width="760" height="20" fill="#0d0d16"/>
 </svg>
