@@ -25,9 +25,9 @@
 <div align="center">
 
 ```
-╔══════════════════════════════════════════════════════════════╗
-║                      > WHOAMI                                ║
-╚══════════════════════════════════════════════════════════════╝
+<div align="center">
+  <img src="./assets/terminal.svg" width="800" alt="Terminal animation" />
+</div>
 ```
 
 </div>
