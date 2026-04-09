@@ -39,6 +39,50 @@
 
 <br/>
 
-<img src="./assets/07-footer.svg" width="760" style="display:block;margin:0;padding:0;pointer-events:none" alt="Connect &amp; Play"/>
+<!-- ── CONNECT & PLAY FOOTER ───────────────────────────────────────────────── -->
+<table width="760" style="border:1.5px solid #f5c842;border-radius:12px;border-collapse:separate;border-spacing:0;background:#0d0d16;font-family:'Courier New',monospace;margin-top:-2px"><tr><td style="padding:18px 24px 0">
+
+<sub style="color:#4a3c0e;font-family:'Courier New',monospace;font-size:11px">// ── connect ───────────────────────────────────────────────────────────────────</sub><br/>
+<code style="color:#ffe066;font-size:13px">$ ping --me</code>
+
+</td></tr><tr><td style="padding:8px 24px 0">
+
+<!-- Contact Buttons -->
+<a href="https://github.com/sir-zech" target="_blank">
+  <img src="https://img.shields.io/badge/⊛_GitHub-sir--zech-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="GitHub"/>
+</a>&nbsp;
+<a href="https://www.linkedin.com/in/sirzech/" target="_blank">
+  <img src="https://img.shields.io/badge/⬡_LinkedIn-sirzech-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="LinkedIn"/>
+</a>&nbsp;
+<a href="https://sirzech.netlify.app/#PORTFOLIO" target="_blank">
+  <img src="https://img.shields.io/badge/◈_Portfolio-sirzech.netlify.app-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="Portfolio"/>
+</a>
+
+</td></tr><tr><td style="padding:16px 24px 0">
+
+<sub style="color:#4a3c0e;font-family:'Courier New',monospace;font-size:11px">// ── games --play ──────────────────────────────────────────────────────────────</sub><br/>
+<code style="color:#ffe066;font-size:13px">$ open ./games/</code>
+
+</td></tr><tr><td style="padding:8px 24px 0">
+
+<!-- Game Play Buttons -->
+<a href="https://flames-sirzech.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/▶_FLAMES-Play_Now-f5c842?style=for-the-badge&labelColor=1a1500&color=0d0d16" alt="Play FLAMES"/>
+</a>&nbsp;
+<a href="https://mafia-sirzech.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/▶_OMERTA-Play_Now-f5c842?style=for-the-badge&labelColor=1a1500&color=0d0d16" alt="Play OMERTA"/>
+</a>
+
+</td></tr><tr><td style="padding:16px 24px 12px">
+
+<hr style="border:none;border-top:.5px solid #2a2008;margin:0 0 12px"/>
+
+<!-- Profile Views Badge -->
+<img src="https://komarev.com/ghpvc/?username=sir-zech&color=f5c842&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views"/>
+
+<br/><br/>
+<sub style="color:#4a3c0e;font-family:'Courier New',monospace;font-size:10px">$ exit &nbsp;//&nbsp; made with ♥ and too much coffee</sub>
+
+</td></tr></table>
 
 </div>
