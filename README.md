@@ -86,6 +86,9 @@
 <a href="https://mafia-sirzech.netlify.app/" target="_blank">
   <img src="https://img.shields.io/badge/▶_OMERTA-Play_Now-f5c842?style=for-the-badge&labelColor=1a1500&color=0d0d16" alt="Play OMERTA"/>
 </a>
+<a href="https://spaceshooter-sirzech.netlify.app/" target="_blank">
+  <img src="https://img.shields.io/badge/▶_SPACESHOOTER-Play_Now-f5c842?style=for-the-badge&labelColor=1a1500&color=0d0d16" alt="Play SPACESHOOTER"/>
+</a>
 
 </td></tr><tr><td style="padding:16px 24px 12px">
 
