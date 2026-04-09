@@ -1,76 +1,48 @@
 <!-- assets/06-connect.svg -->
 <svg width="760" height="140" viewBox="0 0 760 140" xmlns="http://www.w3.org/2000/svg">
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
-
-text {
-  font-family: 'Share Tech Mono', monospace;
-  fill: #F5A623;
-}
-
-.button {
-  fill: #1a1a1a;
-  stroke: #F5A623;
-  stroke-width: 2;
-  transition: all 0.3s ease;
-}
-
-a:hover .button {
-  fill: #F5A623;
-  filter: drop-shadow(0 0 6px #F5A623);
-}
-
-a:hover text {
-  fill: black;
-}
-
-/* CRT flicker */
-@keyframes flicker {
-  0% { opacity: 0.9; }
-  50% { opacity: 1; }
-  100% { opacity: 0.95; }
-}
-
-svg {
-  animation: flicker 2s infinite;
-}
-</style>
-
-<!-- BACKGROUND -->
+<!-- Background -->
 <rect width="760" height="140" fill="#0d0d0d" stroke="#F5A623"/>
 
-<!-- TITLE -->
-<text x="20" y="30" font-size="18">CONNECT WITH ME</text>
+<!-- Title -->
+<text x="20" y="30" fill="#F5A623" font-size="18" font-family="monospace">
+CONNECT WITH ME
+</text>
 
-<!-- BUTTONS -->
-
-<a href="https://github.com/sir-zech" target="_blank">
-  <g>
-    <rect class="button" x="20" y="60" width="160" height="40" rx="6"/>
-    <text x="50" y="85">GITHUB</text>
-  </g>
+<!-- GitHub -->
+<a xlink:href="https://github.com/sir-zech">
+  <rect x="20" y="60" width="160" height="40" rx="6"
+        fill="#1a1a1a" stroke="#F5A623"/>
+  <text x="50" y="85" fill="#F5A623" font-size="14" font-family="monospace">
+    GITHUB
+  </text>
 </a>
 
-<a href="https://www.linkedin.com/in/sirzech/" target="_blank">
-  <g>
-    <rect class="button" x="210" y="60" width="160" height="40" rx="6"/>
-    <text x="235" y="85">LINKEDIN</text>
-  </g>
+<!-- LinkedIn -->
+<a xlink:href="https://linkedin.com/in/YOUR-LINKEDIN">
+  <rect x="210" y="60" width="160" height="40" rx="6"
+        fill="#1a1a1a" stroke="#F5A623"/>
+  <text x="235" y="85" fill="#F5A623" font-size="14" font-family="monospace">
+    LINKEDIN
+  </text>
 </a>
 
-<a href="mailto:code.naveenb@gmail.com">
-  <g>
-    <rect class="button" x="400" y="60" width="160" height="40" rx="6"/>
-    <text x="445" y="85">EMAIL</text>
-  </g>
+<!-- Email -->
+<a xlink:href="mailto:your@email.com">
+  <rect x="400" y="60" width="160" height="40" rx="6"
+        fill="#1a1a1a" stroke="#F5A623"/>
+  <text x="445" y="85" fill="#F5A623" font-size="14" font-family="monospace">
+    EMAIL
+  </text>
 </a>
 
-<a href="https://sirzech.netlify.app/" target="_blank">
-  <g>
-    <rect class="button" x="590" y="60" width="140" height="40" rx="6"/>
-    <text x="610" y="85">PORTFOLIO</text>
-  </g>
+<!-- Portfolio -->
+<a xlink:href="https://your-portfolio.com">
+  <rect x="590" y="60" width="140" height="40" rx="6"
+        fill="#1a1a1a" stroke="#F5A623"/>
+  <text x="610" y="85" fill="#F5A623" font-size="14" font-family="monospace">
+    PORTFOLIO
+  </text>
 </a>
 
 </svg>
