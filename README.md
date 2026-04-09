@@ -16,7 +16,6 @@
 <img src="./assets/01-about.svg" width="760" style="display:block;margin:0;padding:0;pointer-events:none" alt="About"/>
 <img src="./assets/02-stack.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Stack"/>
 <img src="./assets/03-games.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Games"/>
-<img src="./assets/04-snake.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Snake"/>
 <img src="./assets/05-stats-bar.svg" width="760" style="display:block;margin:0;padding:0;margin-top:-2px;pointer-events:none" alt="Stats"/>
 
 <br/>
