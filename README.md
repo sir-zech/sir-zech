@@ -4,18 +4,19 @@
 
 <div align="center">
 
-```
+<!-- ASCII Banner -->
+<pre>
  ███╗   ██╗ █████╗ ██╗   ██╗███████╗███████╗███╗   ██╗
  ████╗  ██║██╔══██╗██║   ██║██╔════╝██╔════╝████╗  ██║
  ██╔██╗ ██║███████║██║   ██║█████╗  █████╗  ██╔██╗ ██║
  ██║╚██╗██║██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══╝  ██║╚██╗██║
  ██║ ╚████║██║  ██║ ╚████╔╝ ███████╗███████╗██║ ╚████║
  ╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚══════╝╚═╝  ╚═══╝
-```
+</pre>
 
 ### `[ FULL STACK DEVELOPER ]` · `[ CLOUD LEARNER ]` · `[ BUILDER ]`
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&size=18&pause=1000&color=F5A623&center=true&vCenter=true&width=500&lines=Hello%2C+World!+%F0%9F%91%8B+I'm+Naveen+B;Full+Stack+Dev+%7C+Java+%2B+Spring+Boot;Learning+Cloud+%E2%98%81%EF%B8%8F+One+Commit+at+a+Time;Angular+%2B+React+%7C+REST+APIs+%7C+.NET;Chennai%2C+India+%F0%9F%87%AE%F0%9F%87%B3)
+![Typing SVG](https://readme-typing-svg.demolab.com?font=Courier+Prime&size=18&pause=1000&color=F5A623&center=true&vCenter=true&width=520&lines=Hello%2C+World!+%F0%9F%91%8B+I'm+Naveen+B;Full+Stack+Dev+%7C+Java+%2B+Spring+Boot;Learning+the+Cloud+%E2%98%81%EF%B8%8F+One+Commit+at+a+Time;Angular+%2B+React+%7C+REST+APIs+%7C+.NET;Also+I+make+web+games+for+fun+%F0%9F%95%B9%EF%B8%8F)
 
 </div>
 
@@ -40,8 +41,9 @@ $ cat about_me.txt
  │  👨‍💻  Software Developer (Full Stack)                        │
  │  🎓  B.E. Computer Science & Engineering — Class of 2025    │
  │  📍  Chennai, India                                         │
- │  ☁️  Growing towards the Cloud, one service at a time       │
+ │  ☁️  Growing towards the Cloud, one commit at a time        │
  │  🔧  I turn coffee & keystrokes into working software       │
+ │  🕹️  I also build silly little browser games for fun        │
  │  🌱  Currently deep-diving: C# · ASP.NET · Azure            │
  └─────────────────────────────────────────────────────────────┘
 ```
@@ -59,6 +61,10 @@ $ cat about_me.txt
 ```
 
 </div>
+
+```bash
+$ cat stack.json | jq
+```
 
 ### ⚙️ Backend
 
@@ -117,7 +123,7 @@ $ cat about_me.txt
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║               > GAMES --hobby.exe                            ║
+║           > GAMES --hobby.exe  [because why not]            ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
@@ -129,11 +135,15 @@ $ ./run_games --list
 
 > 🕹️ I build **browser-based games** for fun — no install, just click and play!
 
+<div align="center">
+
 | 🎮 Game | Description | Play |
-|--------|-------------|------|
-| 🔥 **FLAMES** | The classic compatibility game — find your relationship destiny! | [▶ Play Now](https://flames-sirzech.netlify.app/) |
-| 🎩 **Omerta** | Mafia-style game of deception, bluffing & deduction | [▶ Play Now](https://mafia-sirzech.netlify.app/) |
-| 🚧 **???** | Next game loading... | `[ stay tuned 👀 ]` |
+|:-------:|:------------|:----:|
+| 🔥 **FLAMES** | The classic compatibility game — find your relationship destiny! | [**▶ Play**](https://flames-sirzech.netlify.app/) |
+| 🎩 **Omerta** | Mafia-style game of deception, bluffing & deduction | [**▶ Play**](https://mafia-sirzech.netlify.app/) |
+| 🚀 **Coming Soon** | Next game currently in development... | `[ stay tuned 👀 ]` |
+
+</div>
 
 ---
 
@@ -145,12 +155,19 @@ $ ./run_games --list
 ╚══════════════════════════════════════════════════════════════╝
 ```
 
-<img src="https://github-readme-stats.vercel.app/api?username=sir-zech&show_icons=true&theme=gruvbox&border_radius=8&cache_seconds=1800" width="48%" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=sir-zech&show_icons=true&theme=gruvbox&border_radius=8&cache_seconds=1800&hide_border=false" />
+  <img src="https://github-readme-stats.vercel.app/api?username=sir-zech&show_icons=true&theme=gruvbox&border_radius=8&cache_seconds=1800" width="48%" />
+</picture>
 <img src="https://streak-stats.demolab.com/?user=sir-zech&theme=gruvbox&border_radius=8" width="48%" />
 
-<br/>
+<br/><br/>
 
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sir-zech&layout=compact&theme=gruvbox&border_radius=8&cache_seconds=1800" width="40%" />
+
+<br/><br/>
+
+![Snake animation](https://github.com/sir-zech/sir-zech/blob/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
@@ -167,9 +184,11 @@ $ ./run_games --list
 <a href="https://github.com/sir-zech">
   <img src="https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github" />
 </a>
+&nbsp;
 <a href="https://www.linkedin.com/in/sirzech/">
   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin" />
 </a>
+&nbsp;
 <a href="https://sirzech.netlify.app/#PORTFOLIO">
   <img src="https://img.shields.io/badge/Portfolio-FF5733?style=for-the-badge&logo=react&logoColor=white" />
 </a>
@@ -178,11 +197,13 @@ $ ./run_games --list
 
 ```
 ╔══════════════════════════════════════════════════════════════╗
-║   "Any fool can write code that a computer can understand.  ║
-║    Good programmers write code that humans can understand." ║
-║                                        — Martin Fowler      ║
+║   "Any fool can write code that a computer can understand.   ║
+║    Good programmers write code that humans can understand."  ║
+║                                        — Martin Fowler       ║
 ╚══════════════════════════════════════════════════════════════╝
 ```
+
+<br/>
 
 ![Visitor Count](https://komarev.com/ghpvc/?username=sir-zech&color=orange&style=for-the-badge&label=PROFILE+VIEWS)
 
