@@ -29,6 +29,19 @@
 <img src="https://raw.githubusercontent.com/sir-zech/sir-zech/main/assets/03-games.svg" width="760"/>
 
 <br/>
+<div align="center">
+
+<a href="https://flames-sirzech.netlify.app/">
+  <img src="https://img.shields.io/badge/▶%20PLAY%20FLAMES-0d0d16?style=for-the-badge&logo=&logoColor=f5c842&labelColor=0d0d16&color=f5c842" />
+</a>
+
+&nbsp;&nbsp;&nbsp;
+
+<a href="https://mafia-sirzech.netlify.app/">
+  <img src="https://img.shields.io/badge/▶%20PLAY%20OMERTA-0d0d16?style=for-the-badge&logo=&logoColor=f5c842&labelColor=0d0d16&color=f5c842" />
+</a>
+
+</div>
 
 <!-- SNAKE -->
 <img src="https://raw.githubusercontent.com/sir-zech/sir-zech/output/github-contribution-grid-snake.svg" width="760"/>
