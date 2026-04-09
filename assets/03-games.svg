@@ -37,7 +37,7 @@
     </text>
 
     <!-- PLAY BUTTON (EDIT URL HERE) -->
-    <a href="YOUR_GAME_1_URL_HERE">
+    <a href="https://flames-sirzech.netlify.app/">
       <rect x="604" y="78" width="110" height="26" rx="3"
             fill="rgba(245,200,66,0.1)" stroke="#f5c842" stroke-width="1"/>
       <text x="659" y="95" text-anchor="middle"
@@ -61,7 +61,7 @@
     </text>
 
     <!-- PLAY BUTTON (EDIT URL HERE) -->
-    <a href="YOUR_GAME_2_URL_HERE">
+    <a href="https://mafia-sirzech.netlify.app/">
       <rect x="604" y="138" width="110" height="26" rx="3"
             fill="rgba(245,200,66,0.1)" stroke="#f5c842" stroke-width="1"/>
       <text x="659" y="155" text-anchor="middle"
