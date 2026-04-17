@@ -68,7 +68,7 @@
 <a href="https://www.linkedin.com/in/sirzech/" target="_blank">
   <img src="https://img.shields.io/badge/⬡_LinkedIn-sirzech-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="LinkedIn"/>
 </a>&nbsp;
-<a href="https://sirzech.netlify.app/#PORTFOLIO" target="_blank">
+<a href="https://sirzech.vercel.app/#PORTFOLIO" target="_blank">
   <img src="https://img.shields.io/badge/◈_Portfolio-sirzech.netlify.app-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="Portfolio"/>
 </a>
 
