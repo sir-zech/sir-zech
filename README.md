@@ -69,7 +69,7 @@
   <img src="https://img.shields.io/badge/⬡_LinkedIn-sirzech-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="LinkedIn"/>
 </a>&nbsp;
 <a href="https://sirzech.vercel.app/#PORTFOLIO" target="_blank">
-  <img src="https://img.shields.io/badge/◈_Portfolio-sirzech.netlify.app-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="Portfolio"/>
+  <img src="https://img.shields.io/badge/◈_Portfolio-sirzech.vercel.app-f5c842?style=for-the-badge&labelColor=0d0d16&color=0d0d16&logoColor=f5c842" alt="Portfolio"/>
 </a>
 
 </td></tr><tr><td style="padding:16px 24px 0">
