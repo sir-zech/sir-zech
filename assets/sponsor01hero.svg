@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 280" width="760" height="280">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f5c842"/>
+      <stop offset="50%" stop-color="#ffe066"/>
+      <stop offset="100%" stop-color="#f5c842"/>
+    </linearGradient>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}
+      .heart{fill:#ff6b6b}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+      @keyframes march{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
+      @keyframes shimmer{0%,100%{opacity:.7}50%{opacity:1}}
+      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s .8s both}
+      .l3{animation:fi .05s 1.4s both}.l4{animation:fi .05s 2.0s both}
+      .l5{animation:fi .05s 2.6s both}
+      .cur{animation:fi .05s 3.0s both,blink 1s 3.0s step-end infinite}
+      .top-march{stroke-dasharray:8 4;animation:march .7s linear infinite}
+      .beat{transform-origin:center;transform-box:fill-box;animation:beat 1.2s ease-in-out infinite}
+      .shimmer{animation:shimmer 2s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="760" height="280" rx="12" ry="12" fill="#0d0d16"/>
+  <rect x="0" y="260" width="760" height="20" fill="#0d0d16"/>
+
+  <rect x="0" y="0" width="760" height="280" rx="12" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-dasharray="8 4" class="top-march"/>
+  <line x1="0" y1="12" x2="0" y2="260" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="12" x2="760" y2="260" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="12" y1="0" x2="748" y2="0" stroke="#f5c842" stroke-width="1.5"/>
+
+  <circle cx="30" cy="22" r="5" fill="#ff5f57"/>
+  <circle cx="50" cy="22" r="5" fill="#febc2e"/>
+  <circle cx="70" cy="22" r="5" fill="#28c840"/>
+  <text x="380" y="26" text-anchor="middle" class="m mid" style="font-size:11px">naveen@dev: ~/sponsors  —  zsh</text>
+  <line x1="0" y1="36" x2="760" y2="36" stroke="#f5c842" stroke-width=".5" opacity=".25"/>
+
+  <rect x="0" y="0" width="760" height="280" fill="url(#sl)"/>
+
+  <!-- ASCII SPONSOR -->
+  <g class="l1" font-family="'Share Tech Mono','Courier New',monospace" style="font-size:11px;letter-spacing:0">
+    <text x="380" y="76"  text-anchor="middle" fill="url(#hg)">███████╗██████╗  ██████╗ ███╗   ██╗███████╗ ██████╗ ██████╗</text>
+    <text x="380" y="90"  text-anchor="middle" fill="url(#hg)">██╔════╝██╔══██╗██╔═══██╗████╗  ██║██╔════╝██╔═══██╗██╔══██╗</text>
+    <text x="380" y="104" text-anchor="middle" fill="url(#hg)">███████╗██████╔╝██║   ██║██╔██╗ ██║███████╗██║   ██║██████╔╝</text>
+    <text x="380" y="118" text-anchor="middle" fill="url(#hg)">╚════██║██╔═══╝ ██║   ██║██║╚██╗██║╚════██║██║   ██║██╔══██╗</text>
+    <text x="380" y="132" text-anchor="middle" fill="url(#hg)">███████║██║     ╚██████╔╝██║ ╚████║███████║╚██████╔╝██║  ██║</text>
+    <text x="380" y="146" text-anchor="middle" fill="url(#hg)">╚══════╝╚═╝      ╚═════╝ ╚═╝  ╚═══╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝</text>
+  </g>
+
+  <!-- tagline -->
+  <text x="380" y="184" text-anchor="middle" class="m l2 mid" style="font-size:12px">// fuel the next commit • keep the cursor blinking</text>
+
+  <!-- pill stats -->
+  <g class="l3">
+    <rect x="120" y="206" width="160" height="28" rx="14" fill="rgba(245,200,66,0.06)" stroke="#f5c842" stroke-width=".7"/>
+    <text x="200" y="225" text-anchor="middle" class="m bright" style="font-size:11px">[ open source ]</text>
+  </g>
+  <g class="l4">
+    <rect x="300" y="206" width="160" height="28" rx="14" fill="rgba(245,200,66,0.06)" stroke="#f5c842" stroke-width=".7"/>
+    <text x="380" y="225" text-anchor="middle" class="m bright" style="font-size:11px">[ browser games ]</text>
+  </g>
+  <g class="l5">
+    <rect x="480" y="206" width="160" height="28" rx="14" fill="rgba(245,200,66,0.06)" stroke="#f5c842" stroke-width=".7"/>
+    <text x="560" y="225" text-anchor="middle" class="m bright" style="font-size:11px">[ dev tutorials ]</text>
+  </g>
+
+  <!-- prompt -->
+  <text x="32" y="256" class="m cur" style="font-size:14px"><tspan class="dim">$ </tspan><tspan class="bright">sponsor --start </tspan><tspan class="heart shimmer">♥</tspan><tspan class="bright"> ▌</tspan></text>
+</svg>

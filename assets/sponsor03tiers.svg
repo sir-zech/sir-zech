@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 420" width="760" height="420">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.grn{fill:#5ab83a}.cyan{fill:#5ad7ff}.pink{fill:#ff8fb1}.purple{fill:#c89cff}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes hov{0%,100%{fill:rgba(245,200,66,0.04)}50%{fill:rgba(245,200,66,0.09)}}
+      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s 1.0s both}
+      .l3{animation:fi .05s 1.8s both}.l4{animation:fi .05s 2.6s both}
+      .l5{animation:fi .05s 3.4s both}.l6{animation:fi .05s 4.2s both}
+      .row-pulse{animation:hov 3s ease-in-out infinite}
+      .blink{animation:blink 1.3s step-end infinite}
+    </style>
+  </defs>
+
+  <rect width="760" height="420" fill="#0d0d16"/>
+  <line x1="0" y1="0" x2="0" y2="420" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="420" stroke="#f5c842" stroke-width="1.5"/>
+  <rect width="760" height="420" fill="url(#sl)"/>
+
+  <text x="32" y="30" class="m dim l1" style="font-size:11px">// ── tiers --list ─────────────────────────────────────────────────────────────</text>
+  <text x="32" y="54" class="m l1"><tspan class="dim">$ </tspan><tspan class="bright">ls -la ./tiers/</tspan></text>
+
+  <g class="l2">
+    <text x="48" y="76" class="m dim" style="font-size:10px">ICON</text>
+    <text x="110" y="76" class="m dim" style="font-size:10px">TIER</text>
+    <text x="280" y="76" class="m dim" style="font-size:10px">REWARD</text>
+    <text x="660" y="76" class="m dim" style="font-size:10px">PRICE</text>
+    <line x1="32" y1="80" x2="728" y2="80" stroke="#f5c842" stroke-width=".4" opacity=".3"/>
+  </g>
+
+  <!-- TIER 1 -->
+  <g class="l2">
+    <rect x="32" y="86" width="696" height="60" rx="3" fill="rgba(245,200,66,0.04)" stroke="#f5c842" stroke-width=".6" class="row-pulse"/>
+    <text x="58" y="124" class="m grn" style="font-size:26px">☕</text>
+    <text x="110" y="112" class="m bright" style="font-size:14px;font-weight:bold">COFFEE_DROP</text>
+    <text x="110" y="132" class="m dim" style="font-size:10px">tier_01.lvl</text>
+    <text x="280" y="112" class="m gold" style="font-size:12px">A coffee. A thank-you. A warm fuzzy commit.</text>
+    <text x="280" y="130" class="m dim" style="font-size:10px">→ sponsor listed on profile</text>
+    <rect x="640" y="100" width="78" height="32" rx="6" fill="rgba(90,184,58,0.12)" stroke="#5ab83a" stroke-width=".7"/>
+    <text x="679" y="121" text-anchor="middle" class="m grn" style="font-size:12px;font-weight:bold">$3/mo</text>
+  </g>
+
+  <!-- TIER 2 -->
+  <g class="l3">
+    <rect x="32" y="156" width="696" height="60" rx="3" fill="rgba(245,200,66,0.04)" stroke="#f5c842" stroke-width=".6"/>
+    <text x="58" y="194" class="m cyan" style="font-size:26px">⚡</text>
+    <text x="110" y="182" class="m bright" style="font-size:14px;font-weight:bold">POWER_UP</text>
+    <text x="110" y="202" class="m dim" style="font-size:10px">tier_02.lvl</text>
+    <text x="280" y="182" class="m gold" style="font-size:12px">Sponsors-wall name + early access to new games.</text>
+    <text x="280" y="200" class="m dim" style="font-size:10px">→ private repo preview drops</text>
+    <rect x="640" y="170" width="78" height="32" rx="6" fill="rgba(90,215,255,0.12)" stroke="#5ad7ff" stroke-width=".7"/>
+    <text x="679" y="191" text-anchor="middle" class="m cyan" style="font-size:12px;font-weight:bold">$10/mo</text>
+  </g>
+
+  <!-- TIER 3 -->
+  <g class="l4">
+    <rect x="32" y="226" width="696" height="60" rx="3" fill="rgba(245,200,66,0.04)" stroke="#f5c842" stroke-width=".6"/>
+    <text x="58" y="264" class="m pink" style="font-size:26px">🛡</text>
+    <text x="110" y="252" class="m bright" style="font-size:14px;font-weight:bold">PATRON</text>
+    <text x="110" y="272" class="m dim" style="font-size:10px">tier_03.lvl</text>
+    <text x="280" y="252" class="m gold" style="font-size:12px">Priority on bugs, feature requests, direct DMs.</text>
+    <text x="280" y="270" class="m dim" style="font-size:10px">→ skip the queue, ping me directly</text>
+    <rect x="640" y="240" width="78" height="32" rx="6" fill="rgba(255,143,177,0.12)" stroke="#ff8fb1" stroke-width=".7"/>
+    <text x="679" y="261" text-anchor="middle" class="m pink" style="font-size:12px;font-weight:bold">$25/mo</text>
+  </g>
+
+  <!-- TIER 4 -->
+  <g class="l5">
+    <rect x="32" y="296" width="696" height="60" rx="3" fill="rgba(245,200,66,0.04)" stroke="#f5c842" stroke-width=".6"/>
+    <text x="58" y="334" class="m purple" style="font-size:26px">👑</text>
+    <text x="110" y="322" class="m bright" style="font-size:14px;font-weight:bold">BOSS_LEVEL</text>
+    <text x="110" y="342" class="m dim" style="font-size:10px">tier_04.lvl</text>
+    <text x="280" y="322" class="m gold" style="font-size:12px">Logo/link on portfolio + custom mini-game shoutout.</text>
+    <text x="280" y="340" class="m dim" style="font-size:10px">→ your brand in the credits</text>
+    <rect x="640" y="310" width="78" height="32" rx="6" fill="rgba(200,156,255,0.12)" stroke="#c89cff" stroke-width=".7"/>
+    <text x="679" y="331" text-anchor="middle" class="m purple" style="font-size:12px;font-weight:bold">$100/mo</text>
+  </g>
+
+  <!-- one-time hint -->
+  <g class="l6">
+    <rect x="32" y="368" width="696" height="34" rx="3" fill="none" stroke="#3a3010" stroke-width=".6" stroke-dasharray="5 3"/>
+    <text x="48" y="389" class="m dim" style="font-size:11px">// ── one-time also welcome — `</text>
+    <text x="290" y="389" class="m bright blink" style="font-size:11px">$ sponsor --once</text>
+    <text x="402" y="389" class="m dim" style="font-size:11px">` — any amount keeps the lights on</text>
+  </g>
+
+  <rect x="0" y="400" width="760" height="20" fill="#0d0d16"/>
+</svg>

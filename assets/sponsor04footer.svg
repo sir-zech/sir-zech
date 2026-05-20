@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 180" width="760" height="180">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}
+      .heart{fill:#ff6b6b}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      @keyframes beat{0%,100%{transform:scale(1)}25%{transform:scale(1.25)}50%{transform:scale(1)}75%{transform:scale(1.15)}}
+      @keyframes march{from{stroke-dashoffset:0}to{stroke-dashoffset:-16}}
+      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s .9s both}
+      .l3{animation:fi .05s 1.5s both}
+      .cur{animation:fi .05s 2.0s both,blink 1s 2.0s step-end infinite}
+      .bot-march{stroke-dasharray:8 4;animation:march .7s linear infinite}
+      .beat{transform-origin:center;transform-box:fill-box;animation:beat 1.4s ease-in-out infinite}
+    </style>
+  </defs>
+
+  <rect width="760" height="180" rx="12" ry="12" fill="#0d0d16"/>
+  <rect x="0" y="0" width="760" height="20" fill="#0d0d16"/>
+
+  <rect x="0" y="0" width="760" height="180" rx="12" fill="none" stroke="#f5c842" stroke-width="1.5" stroke-dasharray="8 4" class="bot-march"/>
+  <line x1="0" y1="0" x2="0" y2="168" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="168" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="12" y1="180" x2="748" y2="180" stroke="#f5c842" stroke-width="1.5"/>
+
+  <rect width="760" height="180" fill="url(#sl)"/>
+
+  <text x="32" y="34" class="m dim l1" style="font-size:11px">// ── thank you ───────────────────────────────────────────────────────────────</text>
+
+  <text x="380" y="74" text-anchor="middle" class="m l2 bright" style="font-size:16px">Every sponsor — one-time or monthly —</text>
+  <text x="380" y="96" text-anchor="middle" class="m l2 gold" style="font-size:14px">directly funds the next commit, the next game,</text>
+  <text x="380" y="116" text-anchor="middle" class="m l3 gold" style="font-size:14px">the next 3am bug-fix.</text>
+
+  <text x="32" y="156" class="m cur" style="font-size:13px"><tspan class="dim">$ </tspan><tspan class="bright">exit </tspan><tspan class="dim">// thank you for keeping the cursor blinking </tspan><tspan class="heart beat">♥</tspan></text>
+</svg>

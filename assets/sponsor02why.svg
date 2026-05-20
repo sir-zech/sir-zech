@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" width="760" height="320">
+  <defs>
+    <pattern id="sl" x="0" y="0" width="760" height="4" patternUnits="userSpaceOnUse">
+      <rect width="760" height="1" fill="rgba(0,0,0,0.08)"/>
+    </pattern>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&amp;display=swap');
+      .m{font-family:'Share Tech Mono','Courier New',monospace}
+      .gold{fill:#f5c842}.dim{fill:#4a3c0e}.mid{fill:#b8992e}.bright{fill:#ffe066}.grn{fill:#5ab83a}
+      @keyframes fi{from{opacity:0}to{opacity:1}}
+      @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+      .l1{animation:fi .05s .3s both}.l2{animation:fi .05s .9s both}
+      .l3{animation:fi .05s 1.5s both}.l4{animation:fi .05s 2.1s both}
+      .l5{animation:fi .05s 2.7s both}.l6{animation:fi .05s 3.3s both}
+      .l7{animation:fi .05s 3.9s both}.l8{animation:fi .05s 4.5s both}
+      .cur{animation:fi .05s 4.8s both,blink 1s 4.8s step-end infinite}
+    </style>
+  </defs>
+
+  <rect width="760" height="320" fill="#0d0d16"/>
+  <line x1="0" y1="0" x2="0" y2="320" stroke="#f5c842" stroke-width="1.5"/>
+  <line x1="760" y1="0" x2="760" y2="320" stroke="#f5c842" stroke-width="1.5"/>
+  <rect width="760" height="320" fill="url(#sl)"/>
+
+  <text x="32" y="30" class="m dim l1" style="font-size:11px">// ── why --sponsor ────────────────────────────────────────────────────────────</text>
+  <text x="32" y="54" class="m l1"><tspan class="dim">$ </tspan><tspan class="bright">cat ./why-sponsor.md</tspan></text>
+
+  <text x="32" y="80" class="m l2 dim" style="font-size:14px">&#x250C;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+
+  <g class="l3">
+    <text x="44" y="108" class="m grn" style="font-size:13px">[+]</text>
+    <text x="80" y="108" class="m bright" style="font-size:13px">Maintain &amp; ship</text>
+    <text x="232" y="108" class="m gold" style="font-size:13px">browser games — FLAMES · OMERTA · SPACESHOOTER</text>
+  </g>
+
+  <g class="l4">
+    <text x="44" y="134" class="m grn" style="font-size:13px">[+]</text>
+    <text x="80" y="134" class="m bright" style="font-size:13px">Build &amp; release</text>
+    <text x="232" y="134" class="m gold" style="font-size:13px">open source utilities in Java + Spring + Angular</text>
+  </g>
+
+  <g class="l5">
+    <text x="44" y="160" class="m grn" style="font-size:13px">[+]</text>
+    <text x="80" y="160" class="m bright" style="font-size:13px">Write &amp; publish</text>
+    <text x="232" y="160" class="m gold" style="font-size:13px">dev notes &amp; tutorials from real production work</text>
+  </g>
+
+  <g class="l6">
+    <text x="44" y="186" class="m grn" style="font-size:13px">[+]</text>
+    <text x="80" y="186" class="m bright" style="font-size:13px">Keep online</text>
+    <text x="232" y="186" class="m gold" style="font-size:13px">portfolio + game servers — ad-free, login-free</text>
+  </g>
+
+  <g class="l7">
+    <text x="44" y="212" class="m grn" style="font-size:13px">[+]</text>
+    <text x="80" y="212" class="m bright" style="font-size:13px">Replace</text>
+    <text x="232" y="212" class="m gold" style="font-size:13px">the keyboard that's slowly losing its [E] key</text>
+  </g>
+
+  <text x="32" y="238" class="m l8 dim" style="font-size:14px">&#x2514;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;&#x2500;</text>
+
+  <!-- philosophical footer -->
+  <text x="32" y="276" class="m l8" style="font-size:12px;animation-delay:4.6s"><tspan class="dim">"</tspan><tspan class="mid">Open source runs on time, curiosity, and caffeine.</tspan><tspan class="dim">"</tspan></text>
+  <text x="32" y="294" class="m l8 dim" style="font-size:11px;animation-delay:4.7s">— your sponsorship keeps all three flowing</text>
+
+  <rect x="0" y="300" width="760" height="20" fill="#0d0d16"/>
+</svg>
